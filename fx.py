@@ -7,9 +7,10 @@ import time
 import os
 import pathlib
 
+# Add URL here to be downloaded
 durl="https://archive.thehated3.workers.dev/0:/Udemy/Udemy%20-%20Ethical%20Hacking%20-%20Hands-On%20Training%20-%20Part%20I/"
-# durl="https://archive.thehated3.workers.dev/0:/Udemy/Udemy%20-%20Certified%20Kubernetes%20Security%20Specialist%202021/01%20Introduction/"
-dpath='./Udemy-Ethical-Hacking-Hands-On-Training-Part-1'
+# Add local saving directory here, leave to save in the current directory
+dpath='.'
 
 
 def download(url,path):
