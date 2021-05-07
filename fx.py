@@ -7,10 +7,10 @@ import time
 import os
 import pathlib
 
-# Add URL here to be downloaded
-durl="https://archive.thehated3.workers.dev/0:/Udemy/Udemy%20-%20Ethical%20Hacking%20-%20Hands-On%20Training%20-%20Part%20I/"
-# Add local saving directory here, leave to save in the current directory
-dpath='.'
+durl= "https://archive.thehated3.workers.dev/0:/Udemy/Udemy%20-%20Complete%20Guitar%20System%20-%20Beginner%20to%20Advanced/"
+
+# durl="https://archive.thehated3.workers.dev/0:/Udemy/Udemy%20-%20Certified%20Kubernetes%20Security%20Specialist%202021/01%20Introduction/"
+dpath="./Udemy_Complete_Guitar_System_Beginner_to_Advanced"
 
 
 def download(url,path):
@@ -46,16 +46,17 @@ def download(url,path):
             dlinks.append(furl)
         else:
             fname=i.text
-            formated_folder_name=fname.replace(" ","-")
+            formated_folder_name=fname.replace(" ","_")
             new_path=path+"/"+formated_folder_name
             download(folder,new_path)
 
     for x in dlinks:
         # print(x)
         print(f"downloading in path: {path}")
-        os.system(f'wget -c -P {path} {x}')
+        os.system(f'wget -c -P '+f'{path} '+'"'+ f'{x}'+'"')
 
     driver.close()
 
 if __name__=='__main__':
     download(durl,dpath)
+    # print(turl)
