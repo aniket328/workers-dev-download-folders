@@ -7,9 +7,14 @@ import time
 import os
 import pathlib
 
+# Put the URL here to download from,
+# example_url= "https://archive.thehated3.workers.dev/0:/Station%20X%20-%20The%20Complete%20Cyber%20Security%20Course!/"
 durl= "https://archive.thehated3.workers.dev/0:/Station%20X%20-%20The%20Complete%20Cyber%20Security%20Course!/"
 
-dpath="./Station_X_The_Complete_Cyber_Security_Course"
+# Put the path of the local directory to download, leave "." to download the the current directory.
+# example_path="./Station_X_The_Complete_Cyber_Security_Course"
+dpath="."
+
 
 count=0
 failed_links=[]
