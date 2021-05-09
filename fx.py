@@ -6,10 +6,14 @@ import time
 import pickle
 import os
 
-
+#put url here
+#example_url= "https://archive.thehated3.workers.dev/0:/Station%20X%20-%20The%20Complete%20Cyber%20Security%20Course!/"
 durl= "https://archive.thehated3.workers.dev/0:/Station%20X%20-%20The%20Complete%20Cyber%20Security%20Course!/"
 
-dpath="./Station_X_The_Complete_Cyber_Security_Course"
+#put local path to download here, leave '.' to download in current directory
+#example_path="./Station_X_The_Complete_Cyber_Security_Course"
+dpath="."
+
 
 count=0
 rcount=0
